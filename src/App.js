@@ -15,7 +15,7 @@ const app = new Clarifai.App({
   apiKey: "232a5948f1ab40f58bc8e21ec1190b73",
 });
 
-const particleprams = {
+const particleOptions = {
   particles: {
     number: {
       value: 90,
@@ -91,7 +91,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Particles className="particles" params={particleprams} />
+        <Particles className="particles" params={particleOptions} />
         <Navigation
           isSignedIn={this.state.isSignedIn}
           onRouteChange={this.onRouteChange}
