@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 import Clarifai from "clarifai";
 import Navigation from "./components/Navigation/Navigation";
 import Rank from "./components/Rank/Rank";
@@ -15,18 +15,18 @@ const app = new Clarifai.App({
   apiKey: "232a5948f1ab40f58bc8e21ec1190b73",
 });
 
-const particleOptions = {
-  particles: {
-    number: {
-      value: 60,
-      density: {
-        enable: true,
-        value_area: 800,
-      },
-    },
-    color: {},
-  },
-};
+// const particleOptions = {
+//   particles: {
+//     number: {
+//       value: 60,
+//       density: {
+//         enable: true,
+//         value_area: 800,
+//       },
+//     },
+//     color: {},
+//   },
+// };
 
 class App extends Component {
   constructor() {
@@ -92,7 +92,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Particles className="particles" params={particleOptions} />
+        {/*<Particles className="particles" params={particleOptions} />*/}
         <Navigation
           isSignedIn={this.state.isSignedIn}
           onRouteChange={this.onRouteChange}
